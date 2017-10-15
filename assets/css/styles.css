@@ -2,6 +2,8 @@
 /* == GENERAL == */
 
 body {
+	font-family: 'Lato', sans-serif;
+
 	margin-top: 50px;
 	font-size: 16px;
 }
@@ -42,6 +44,10 @@ p.lead {
 	font-weight: normal;
 }
 
+img {
+	max-width: 100%;
+}
+
 button, input, .btn, a.btn {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
@@ -76,7 +82,7 @@ section h2 {
 
 .navbar-inverse {
 	background-color: white;
-	border-color: white;
+	border-color: #A9A9A9;
 
 }
 
@@ -122,7 +128,7 @@ section h2 {
 	font-size: 8vmax;
 }
 
-#hero .btn-outline-primary {
+.btn-outline-primary {
 	border: 2px solid white;
 	border-radius: 0px;
 	text-transform: uppercase;
@@ -130,6 +136,19 @@ section h2 {
 
 
 /* == LAYOUT == */
+
+.container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.container-fluid [class^=col-]:first-of-type{
+	padding-left: 0;
+}
+
+.container-fluid [class^=col-]:last-of-type{
+	padding-right: 0;
+}
 
 .row + .row {
 	margin-top: 20px;
@@ -194,10 +213,73 @@ section h3 {
 	width: 300px;
 }
 
+.overlay {
+  position: relative;
+}
+
+.overlay:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: none;
+  z-index:0;
+}
+
+.overlay:hover:before{
+  display: block;
+}
+
+.white:before {
+  background-color: rgba( 255, 255, 255, 0.1 );
+}
+
 .form-control:focus {
   border-color: #888;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+.promo img {
+	position: relative;
+}
+
+.promo-text {
+   color: white;
+   position: absolute; 
+   text-transform: uppercase;
+   width: 100%; 
+   text-align: center;
+}
+
+.accessories-promo-text {
+   top: 295px; 
+   right: 0; 
+}
+
+.accessories-promo-text p {
+	font-size: 3em;
+	line-height: .8em;
+}
+
+.accessories-promo-text span {
+	font-size: 1em;
+	text-decoration: underline;
+}
+
+.clothes-sm-promo-text {
+   top: 85px; 
+   left: 100px; 
+}
+
+.clothes-sm-promo-text p {
+	font-size: 2em;
+}
+
+.clothes-sm-promo-text span {
+	text-decoration: underline;
 }
 
 .badge.social {
