@@ -190,9 +190,9 @@ section h3 {
 	color: #444;
 }
 
-// #signup .btn {
-// 	background-color: #ff5a5f;
-// }
+.category-img img {
+	width: 300px;
+}
 
 .form-control:focus {
   border-color: #888;
