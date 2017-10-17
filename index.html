@@ -6,12 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<link rel="icon" href="favicon.ico">
-	<title>Waverlust Apparel</title>
+	<title>Infamiss</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day|Lato" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900i" rel="stylesheet">
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
@@ -34,12 +33,13 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="/"><img src="assets/img/logo-badge.svg" class="logo" alt="W."><span class="hidden-xs">Waverlust</span></a>
+						<a class="navbar-brand" href="/"><img src="assets/img/logo.png" class="logo" alt="INFAMISS"></a>
 					</div><!--navbar header-->
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="clothing.html">Clothing</a></li>
 							<li><a href="accessories.html">Accessories</a></li>
+							<li><a href="homegoods.html">Home Goods</a></li>
 							<li><a href="sale.html">Sale</a></li>
 						</ul><!-- nav -->
 					</div>
@@ -50,13 +50,14 @@
 
 	<!-- HERO -->
 	<a href="/collection.html">
-		<section id="hero" data-type="background" data-speed="4">
+		<section id="hero">
 			<article>
 			<div class="container clearfix">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 hero-text">
-						<p class="lead">sand and sea</p>
-						<span class="btn btn-lg btn-outline-primary" href="/" role="button">view the collection</span>
+						<p class="lead going-up">50% off dresses</p>
+						<p class="sale-code">code: DRESSLOVE</p>
+						<span class="btn btn-lg btn-outline-primary" href="/" role="button">shop now</span>
 					</div><!--col 8 -->
 				</div><!-- row -->
 			</div><!--container!-->
@@ -75,21 +76,28 @@
 			<div class="row">
 				<div class="col-sm-4 category-img">
 					<div class="overlay white">
-						<img src="assets/img/Clothing.jpg">
-					</div>
-					<h3>clothes</h3>
+						<img src="assets/img/clothing.jpg">
+						<div class="promo-text category-promo-text">
+							<p>clo<br>thi<br>ng</p>
+						</div>
+					</div><!--overlay-->
 				</div><!-- col -->
 				<div class="col-sm-4 category-img">
 					<div class="overlay white">
-						<img src="assets/img/Swimwear.jpg">
-					</div>
-					<h3>swim</h3>
+						<img src="assets/img/swimwear.jpg">
+						<div class="promo-text category-promo-text">
+							<p>swi<br>mwe<br>ar</p>
+						</div>
+					</div><!--overlay-->
+					
 				</div><!-- col -->
 				<div class="col-sm-4 category-img">
 					<div class="overlay white">
 						<img src="assets/img/accessories.jpg">
-					</div>
-					<h3>accessories</h3>
+						<div class="promo-text category-promo-text">
+							<p>acc<br>esso<br>ries</p>
+						</div>
+					</div><!--overlay-->
 				</div><!-- col -->
 			</div><!-- row -->
 		</div><!-- container -->
@@ -98,10 +106,20 @@
 	<!-- ACCESSORIES PROMO -->
 	<section id="accessories-promo">
 		<div class="promo container-fluid">
-
+			<div class="row">		
+				<div class="section-header">
+					<h2>Sale</h2>
+				</div><!--section-header-->
+			</div>
+			<div class="row">
 				<div class="col-sm-8 accessories-promo">
-					<a href="accessories.html">
+					<a href="homegoods.html">
 					<img src="assets/img/accessories-promo-lg.jpg">
+						<div class="promo-text accessories-promo-text">
+							<p>Home Goods</p>
+							<p class="small">Buy 1, Get 1</p>
+							<span class="shop-link">shop home</span>
+						</div>
 					</a>
 				</div><!-- col -->
 				<div class="col-sm-4">
@@ -109,8 +127,8 @@
 						<img src="assets/img/accessories-promo-sm.jpg">
 						<div class="promo-text accessories-promo-text">
 							<p>Accessories</p>
-							<p>30% off</p>
-							<span>shop accessories</span>
+							<p class="small">30% off</p>
+							<span class="shop-link">shop accessories</span>
 						</div>
 					</a>
 				</div><!-- col -->
@@ -121,30 +139,48 @@
 	<!-- CLOTHES PROMO -->
 	<section id="clothes-promo">
 		<div class="promo container-fluid">
-
+			<div class="row">
+				<div class="section-header">
+					<h2>New Arrivals</h2>
+				</div><!--section-header-->
+			</div>
+			<div class="row">
 				<div class="col-sm-4 clothes-promo">
-					<img src="assets/img/clothes-promo-sm.jpg">
+				<a href="clothing.html">	
+						<img src="assets/img/clothes-promo-sm.jpg">
+					<div class="shape-container">
+						<div class="trapezoid"></div>	
+					</div>	
 					<div class="promo-text clothes-sm-promo-text">
 						<p>Jackets</p>
-						<span>Shop</span>
-					</div>
+						<span class="shop-link">Shop</span>
+					</div>			
+				</a>
 				</div><!-- col -->
 				<div class="col-sm-8 clothes-promo">
-					<img src="assets/img/clothes-promo-lg.jpg">
+					<a href="clothing.html">
+							<img src="assets/img/clothes-promo-lg.jpg">
+						<div class="promo-text clothes-lg-promo-text">
+							<p>Tees</p>
+							<span class="btn btn-lg btn-outline-primary" href="/" role="button">3 for $30</span>
+							<span class="shop-link">Shop tees</span>
+						</div>
+					</a>
 				</div><!-- col -->
 			</div><!-- row -->
 		</div><!-- container -->
 	</section><!--accessories-promo-->
 
-	<!-- SIGN UP -->
-	<section id="signup" data-type="background" data-speed="4">
+	<!-- FOOTER -->
+	<footer>
 		<div class="container">
-			<div class="row">
+
+			<div id="signup" class="row">
 				<div class="col-sm-8 col-sm-offset-2">
 					<h3>Be the first to know and get free 2-day shipping.</h3>
 				</div><!--end col-->
 				<div class="col-sm-6 col-sm-offset-3">
-					<p>Sign up for the WAVERLUST mailing list and get exclusive news and offers.</p>
+					<p>Sign up for the INFAMISS mailing list and get exclusive news and offers.</p>
 				</div><!--end col-->
 			  <div class="col-sm-4 col-sm-offset-4">
 			    <div class="input-group">
@@ -154,30 +190,25 @@
 			      </span><!--input-group-btn-->
 			    </div><!-- /input-group -->
 			  </div><!-- /.col-sm-4 -->
-			</div><!-- /.row -->			
-		</div><!--container-->
-	</section><!--signup-->
+			</div><!-- /.row -->	
 
-	<!-- FOOTER -->
-	<footer>
-		<div class="container">
 			<div class="col-sm-3">
-				<a href="/"><span class="hidden-sm hidden-xs">Waverlust</span></a>
+				<a href="/"><span class="hidden-sm hidden-xs">Infamiss</span></a>
 			</div><!--end col-->
-			<div class="col-sm-6">
+			<div class="col-sm-6 footer-nav">
 				<nav>
 					<ul class="list-unstyled list-inline">
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Clothing</a></li>
 						<li><a href="#">Accessories</a></li>
+						<li><a href="#">Home Goods</a></li>
 						<li><a href="#">Sale</a></li>
 						<li class="signup-link"><a href="#">Subscribe</a></li>
 					</ul>
 				</nav>
 			</div><!--end col-->
 			<div class="col-sm-3">
-				<p class="pull-right">&copy; 2017</p>
-
+				<p class="pull-right copyright">&copy; 2017</p>
 			</div><!--col-->
 		</div><!--container -->
 	</footer>

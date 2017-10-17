@@ -3,7 +3,6 @@
 
 body {
 	font-family: 'Lato', sans-serif;
-
 	margin-top: 50px;
 	font-size: 16px;
 }
@@ -59,6 +58,12 @@ button, input, .btn, a.btn {
 	font-weight: bold;
 }
 
+.btn-outline-primary {
+	border: 2px solid white;
+	border-radius: 0px;
+	text-transform: uppercase;
+}
+
 button.btn:focus {
 	outline: none !important;
 }
@@ -69,11 +74,14 @@ section h2 {
 
 /* == NAVBAR == */
 
+.navbar-brand {
+	padding: 10px;
+}
+
 .navbar-brand>img {
 	display: inline;
-	width: 100%;
-	margin-right: .5em;
-	margin-top: -.15em;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .navbar-brand span {
@@ -97,20 +105,15 @@ section h2 {
 	color: #808080;
 }
 
-.logo {
-	min-width: 15px;
-	max-width: 28px;
-}
-
 /* == HERO == */
 
+
 #hero {
-	background: url('../img/hero-bg.jpg') 100% 0;
-	background-size: 100% 130%;
-	min-height: 40vw;
-	min-height: calc(40vw + 50px);
+	background: url('../img/palm-border.png') 100% 0 #ffb2a2;
+	background-size: 100% 100%;
 	cursor: pointer;
 }
+
 
 #hero article {
 	width: 100%;
@@ -119,19 +122,22 @@ section h2 {
 
 #hero .hero-text {
 	color: white;
-	margin-top: 10px;
-	margin-bottom: 60px;
+	position: relative;
+}
+
+#hero .sale-code {
+	font-size: 1.4em;
+	margin-bottom: 20px;
 }
 
 #hero p.lead {
-	font-family: 'Dawning of a New Day', cursive;
-	font-size: 8vmax;
+	font-size: 5vmax;
+	text-transform: uppercase;
 }
 
-.btn-outline-primary {
-	border: 2px solid white;
-	border-radius: 0px;
-	text-transform: uppercase;
+#hero .btn-outline-primary {
+	border: 1.3px solid white;
+	text-transform: lowercase;
 }
 
 
@@ -155,7 +161,7 @@ section h2 {
 }
 
 section {
-	padding: 80px 0;
+	padding: 60px 0;
 }
 
 section.main-content {
@@ -202,11 +208,11 @@ section h3 {
 	text-align: center;
 }
 
-#signup {
-	text-align: center;
-	background: white;
-	background-size: 150%;
-	color: #444;
+.going-up{
+	font-style: italic;
+	font-weight: 900;
+	transform: rotate(-5deg);
+	text-shadow: 0 0 1px rgba(0,0,0,0.8);
 }
 
 .category-img img {
@@ -254,6 +260,18 @@ section h3 {
    text-align: center;
 }
 
+.promo-text span.shop-link {
+	font-size: 1em;
+	text-decoration: underline;
+}
+
+.category-promo-text {
+	top: 15px;
+	left: 29px;
+	font-size: 4.5em;
+	text-align: left;
+}
+
 .accessories-promo-text {
    top: 295px; 
    right: 0; 
@@ -264,9 +282,8 @@ section h3 {
 	line-height: .8em;
 }
 
-.accessories-promo-text span {
-	font-size: 1em;
-	text-decoration: underline;
+p.small {
+	font-size: 1.5em;
 }
 
 .clothes-sm-promo-text {
@@ -275,11 +292,41 @@ section h3 {
 }
 
 .clothes-sm-promo-text p {
+	color: black;
 	font-size: 2em;
+	text-shadow: 2px 2px #FF0000;
 }
 
-.clothes-sm-promo-text span {
-	text-decoration: underline;
+.clothes-lg-promo-text {
+	line-height: 2em;
+	top: 300px;
+	right: 250px;
+}
+
+.clothes-lg-promo-text p {
+	font-size: 3em;
+}
+
+.trapezoid {
+  position: absolute;
+  width: 180px;
+  height: 50px;
+  background: yellow;
+  transform: perspective(9px) rotateY(1deg);
+  margin: 5px;
+  right: 0;
+  top: 78px;
+}
+
+.promo-text .btn {
+	display: block;
+	max-width: 20%;
+	margin: 0 auto;
+}
+
+.sale-banner {
+	text-transform: uppercase;
+	color: 
 }
 
 .badge.social {
@@ -316,10 +363,6 @@ footer {
 	font-size: 12px;
 }
 
-footer p {
-	margin: 0;
-}
-
 footer a:link, footer a:visited {
 	color: white;
 }
@@ -334,6 +377,22 @@ footer li.signup-link a {
 
 footer li.signup-link a:hover {
 	font-weight: bold;
+}
+
+footer .footer-nav {
+	text-align: center;
+}
+
+#signup input.form-control {
+	border: 2px solid white;
+	border-radius: 0;
+}
+
+#signup {
+	text-align: center;
+	background-size: 150%;
+	color: #white;
+	padding-bottom: 30px;
 }
 
 /* == CONTACT == */
@@ -373,16 +432,11 @@ textarea {
 /* ==== MEDIA QUERIES === */
 
 @media screen and ( max-width: 1200px ) {
-	#hero {
-		min-height: 50vw;
-	}
+
 }
 
 @media screen and ( max-width: 1000px ) {
-	#hero {
-		min-height: 60vw;
-		min-height: calc(50vw + 100px);
-	}
+
 
 }
 
@@ -394,14 +448,17 @@ textarea {
 }
 
 @media screen and ( max-width: 767px ) {
-	#hero {
-		min-height: 70vw;
-		min-height: calc(60vw + 100px);
-	}
 
+	.category-img img {
+		padding-bottom: 40px;
+	}
 
 }
 
 @media screen and ( max-width: 568px ) {
+
+	#hero {
+		background: #ffb2a2;
+	}
 
 }
